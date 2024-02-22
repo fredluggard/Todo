@@ -5,14 +5,29 @@
 }
 
 body {
-  background-color: teal;
   color: white;
   font-family: courier;
   min-height: 100vh;
 }
+body::before {
+  /* background-color: teal; */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  z-index: -1;
+}
 
 header {
   font-size: 1.5rem;
+  color: #e27769;
 }
 
 header,
@@ -32,6 +47,7 @@ form button {
   border: none;
   background: white;
   outline: none;
+  border: 2px solid #e27769;
 }
 
 form button {
@@ -66,6 +82,7 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
+  border: 2px solid #e27769;
 }
 
 .todo li {
@@ -97,9 +114,10 @@ form button:hover {
 
 .edit-btn {
   color: red;
-  padding: 5px;
-  font-size: 16px;
+  padding: 0 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  border: none;
   cursor: pointer;
 }
 
@@ -109,6 +127,12 @@ form button:hover {
 
 .todo-item {
   padding: 0.5rem 0.5rem;
+  width: 350px;
+}
+
+.edit-input {
+  outline: none;
+  border: none;
 }
 
 .fa-trash,
@@ -131,7 +155,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   outline: none;
-  border: none;
+  border: 2px solid #e27769;
 }
 
 .select {
@@ -156,11 +180,6 @@ select {
   padding: 1rem;
   pointer-events: none;
   transition: all 0.3s ease;
-}
-
-.select:hover::after {
-  background: white;
-  color: #ff6f47;
 }
 
 @media (max-width: 768px) {

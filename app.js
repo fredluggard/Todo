@@ -37,7 +37,7 @@ function addTodo(event) {
 
   //Edit Todo
   const editTodo = document.createElement("span");
-  editTodo.innerText = "Edit";
+  editTodo.innerHTML = "&#9998;";
   editTodo.classList.add("edit-btn");
   todoDiv.appendChild(editTodo);
 
