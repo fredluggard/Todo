@@ -86,6 +86,27 @@ form button:hover {
   background: #4ea733;
 }
 
+.complete-btn1 {
+  background: #1e33ec;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.edit-btn {
+  color: red;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
 .todo-item {
   padding: 0.5rem 0.5rem;
 }
@@ -127,7 +148,7 @@ select {
 }
 
 .select::after {
-  content: '\25BC';
+  content: "\25BC";
   position: absolute;
   background: #ff6f47;
   top: 0;
