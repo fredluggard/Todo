@@ -62,6 +62,11 @@ form button:hover {
   color: white;
 }
 
+.img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
 .todo-container {
   display: flex;
   justify-content: center;
